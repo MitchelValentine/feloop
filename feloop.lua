@@ -29,7 +29,7 @@ end)
 
 setreadonly(meta,true)
 
-if Player:IsInGroup(6000816) then else
+if not Player:IsInGroup(6000816) then
     Player:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))
 end
 
