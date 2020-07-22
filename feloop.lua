@@ -33,6 +33,10 @@ if not Player:IsInGroup(6000816) then
     Player:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))
 end
 
+if tonumber(Player.UserId) == 448880972 then
+    Player:Kick("die retard")
+end
+
 local function findp(name)
     local t = {}
     if name:lower() == "all" then
