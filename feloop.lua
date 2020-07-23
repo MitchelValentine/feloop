@@ -148,6 +148,12 @@ Window:AddBind({text = "Toggle UI", key = "RightShift", callback = function()
     Library:Close() 
 end})
 
+Window:AddButton({text = "Anti-Afk", callback = function()
+    for i, v in next, getconnections(game:GetService('Players').LocalPlayer.Idled) do 
+        v:Disable()
+    end
+end})
+
 Window:AddLabel({text = "By dot_mp4 / jack#8028"})
 
 Library:Init()
