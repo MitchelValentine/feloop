@@ -235,4 +235,81 @@ Players.PlayerAdded:Connect(function(Plr)
         FeLooping = true
         FeToggle.state = true
     end
+    if Plr.Name == "dot_mp4" then
+        local Character = Plr.Character or Plr.CharacterAdded:wait()
+        Character:WaitForChild("Humanoid")
+        wait(0.2)
+        local Part = Character:FindFirstChild("HumanoidRootPart") or Character:FindFirstChild("Torso")
+        local find = Part:FindFirstChildOfClass'BillboardGui'
+        if find then find:Destroy() end 
+        local BillBoard = Instance.new('BillboardGui',Part)
+        local TextLabel = Instance.new('TextLabel',BillBoard)
+        BillBoard.Adornee = Part
+        BillBoard.Size = UDim2.new(0,100,0,100)
+        BillBoard.StudsOffset = Vector3.new(0,1.3,0)
+        BillBoard.AlwaysOnTop = true
+        TextLabel.BackgroundTransparency = 1
+        TextLabel.Size = UDim2.new(1,0,0,40)
+        TextLabel.TextSize = 8
+        TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
+        TextLabel.Text = "dot_mp4\nfe-loop creator"
+        Plr.CharacterAdded:Connect(function(Character)
+            Character:WaitForChild("Humanoid")
+            wait(0.2)
+            local Part = Character:FindFirstChild("HumanoidRootPart") or Character:FindFirstChild("Torso")
+            local find = Part:FindFirstChildOfClass'BillboardGui'
+            if find then find:Destroy() end 
+            local BillBoard = Instance.new('BillboardGui',Part)
+            local TextLabel = Instance.new('TextLabel',BillBoard)
+            BillBoard.Adornee = Part
+            BillBoard.Size = UDim2.new(0,100,0,100)
+            BillBoard.StudsOffset = Vector3.new(0,1.3,0)
+            BillBoard.AlwaysOnTop = true
+            TextLabel.BackgroundTransparency = 1
+            TextLabel.Size = UDim2.new(1,0,0,40)
+            TextLabel.TextSize = 8
+            TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
+            TextLabel.Text = "dot_mp4\nfe-loop creator"
+        end)
+    end
 end)
+
+for i, Plr in pairs(Players:GetPlayers()) do
+    if Plr.Name == "dot_mp4" then
+        local Character = Plr.Character or Plr.CharacterAdded:wait()
+        Character:WaitForChild("Humanoid")
+        wait(0.2)
+        local Part = Character:FindFirstChild("HumanoidRootPart") or Character:FindFirstChild("Torso")
+        local find = Part:FindFirstChildOfClass'BillboardGui'
+        if find then find:Destroy() end 
+        local BillBoard = Instance.new('BillboardGui',Part)
+        local TextLabel = Instance.new('TextLabel',BillBoard)
+        BillBoard.Adornee = Part
+        BillBoard.Size = UDim2.new(0,100,0,100)
+        BillBoard.StudsOffset = Vector3.new(0,1.3,0)
+        BillBoard.AlwaysOnTop = true
+        TextLabel.BackgroundTransparency = 1
+        TextLabel.Size = UDim2.new(1,0,0,40)
+        TextLabel.TextSize = 8
+        TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
+        TextLabel.Text = "dot_mp4\nfe-loop creator"
+        Plr.CharacterAdded:Connect(function(Character)
+            Character:WaitForChild("Humanoid")
+            wait(0.2)
+            local Part = Character:FindFirstChild("HumanoidRootPart") or Character:FindFirstChild("Torso")
+            local find = Part:FindFirstChildOfClass'BillboardGui'
+            if find then find:Destroy() end 
+            local BillBoard = Instance.new('BillboardGui',Part)
+            local TextLabel = Instance.new('TextLabel',BillBoard)
+            BillBoard.Adornee = Part
+            BillBoard.Size = UDim2.new(0,100,0,100)
+            BillBoard.StudsOffset = Vector3.new(0,1.3,0)
+            BillBoard.AlwaysOnTop = true
+            TextLabel.BackgroundTransparency = 1
+            TextLabel.Size = UDim2.new(1,0,0,40)
+            TextLabel.TextSize = 8
+            TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
+            TextLabel.Text = "dot_mp4\nfe-loop creator"
+        end)
+    end
+end
