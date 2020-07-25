@@ -1,0 +1,13 @@
+local Player = game:GetService('Players').LocalPlayer
+
+if not Player:IsInGroup(6000816) then
+    Player:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))
+end
+
+if tonumber(Player.UserId) == 448880972  or tonumber(Player.UserId) == 1628603504 then
+    Player:Kick("die retard")
+end
+
+if Player.Name:lower():find("lynx") ~= nil then
+    Player:Kick("die retard")
+end
