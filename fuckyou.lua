@@ -8,6 +8,6 @@ if tonumber(Player.UserId) == 448880972  or tonumber(Player.UserId) == 162860350
     Player:Kick("die retard")
 end
 
-if Player.Name:lower():find("lynx") ~= nil then
+if Player.Name:lower():find("lynx") then
     Player:Kick("die retard")
 end
