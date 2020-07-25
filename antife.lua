@@ -51,3 +51,17 @@ UserInputService.InputEnded:Connect(function(Input, Processed)
         end
     end
 end)
+
+Player.CharacterAdded:Connect(function()
+    repeat wait() until Player.Backpack:FindFirstChildOfClass'Tool'
+    wait(0.3)
+    table.foreach(Tools, function(i, v)
+        table.remove(Tools, i)
+    end)
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        table.insert(Tools, v)
+    end
+    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+        table.insert(Tools, v)
+    end
+end)
