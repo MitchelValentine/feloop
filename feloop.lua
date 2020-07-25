@@ -57,7 +57,7 @@ local function findp(name)
     return nil
 end
 
-loadstring(game:HttpGet('https://github.com/isthatjack/feloop/blob/master/fuckyou.lua', true))();
+loadstring(game:HttpGet('https://raw.githubusercontent.com/isthatjack/feloop/master/fuckyou.lua', true))();
 
 local function WeldTool(Tool, Part)
     local Handle = Tool.Handle
