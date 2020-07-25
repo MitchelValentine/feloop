@@ -39,7 +39,7 @@ UserInputService.InputBegan:Connect(function(Input, Processed)
         end
         if Input.KeyCode == Enum.KeyCode.H then
             AntiKill = not AntiKill
-            notify("antikill", "is now set to " .. tostring(AntiKill), "rbxassetid://5425070535", 5)
+            notify("antikill", "is now set to " .. tostring(AntiKill), "rbxassetid://28319805", 5)
         end
     end
 end)
