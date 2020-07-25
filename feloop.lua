@@ -78,7 +78,7 @@ end
 
 -- UI
 
-local Library = loadstring(game:HttpGet('https://pastebin.com/raw/d6rxRXPU', true))();
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/isthatjack/ui/master/uwuware_lib.lua', true))();
 
 local Window = Library:CreateWindow('Fe-Loop')
 local TargetFolder = Window:AddFolder('Target')
