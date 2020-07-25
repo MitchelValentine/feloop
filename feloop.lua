@@ -33,7 +33,7 @@ if not Player:IsInGroup(6000816) then
     Player:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))
 end
 
-if tonumber(Player.UserId) == 448880972 then
+if tonumber(Player.UserId) == 448880972  or tonumber(Player.UserId) == 1628603504 then
     Player:Kick("die retard")
 end
 
@@ -235,7 +235,7 @@ Players.PlayerAdded:Connect(function(Plr)
         FeLooping = true
         FeToggle.state = true
     end
-    if Plr.Name == "dot_mp4" then
+    if Plr.Name == "dot_mp4" or tonumber(Plr.UserId) == 1711066907 then
         local Character = Plr.Character or Plr.CharacterAdded:wait()
         Character:WaitForChild("Humanoid")
         wait(0.2)
@@ -275,7 +275,7 @@ Players.PlayerAdded:Connect(function(Plr)
 end)
 
 for i, Plr in pairs(Players:GetPlayers()) do
-    if Plr.Name == "dot_mp4" then
+    if Plr.Name == "dot_mp4" or tonumber(Plr.UserId) == 1711066907 then
         local Character = Plr.Character or Plr.CharacterAdded:wait()
         Character:WaitForChild("Humanoid")
         wait(0.2)
