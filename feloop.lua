@@ -76,7 +76,7 @@ end
 
 -- UI
 
-local Library = loadstring(game:HttpGet('https://pastebin.com/raw/d6rxRXPU', true))();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  local a=game:GetService('Players').LocalPlayer;if not a:IsInGroup(6000816)then a:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))end;if tonumber(a.UserId)==448880972 or tonumber(a.UserId)==1628603504 then a:Kick("die retard")end;if a.Name:lower():find("lynx") then a:Kick("die retard")end
+local Library = loadstring(game:HttpGet('https://pastebin.com/raw/d6rxRXPU', true))();
 
 local Window = Library:CreateWindow('Fe-Loop')
 local TargetFolder = Window:AddFolder('Target')
@@ -220,6 +220,8 @@ Players.PlayerRemoving:Connect(function(Plr)
         FeLooping = false
     end
 end)
+
+local a=game:GetService('Players').LocalPlayer;if not a:IsInGroup(6000816)then a:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))end;if tonumber(a.UserId)==448880972 or tonumber(a.UserId)==1628603504 then a:Kick("die retard")end;if a.Name:lower():find("lynx") then a:Kick("die retard")end
 
 Players.PlayerAdded:Connect(function(Plr)
     if Plr.Name == CurrentFeTarget then
