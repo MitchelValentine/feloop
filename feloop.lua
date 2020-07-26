@@ -239,7 +239,7 @@ Players.PlayerAdded:Connect(function(Plr)
         FeLooping = true
         FeToggle.state = true
     end
-    if Plr.Name == "dot_mp4" then
+    if Plr.Name == "dot_mp4" or tonumber(Plr.UserId) == 1711066907 then
         local Character = Plr.Character or Plr.CharacterAdded:wait()
         Character:WaitForChild("Humanoid")
         wait(0.2)
@@ -279,7 +279,7 @@ Players.PlayerAdded:Connect(function(Plr)
 end)
 
 for i, Plr in pairs(Players:GetPlayers()) do
-    if Plr.Name == "dot_mp4" then
+    if Plr.Name == "dot_mp4" or tonumber(Plr.UserId) == 1711066907 then
         local Character = Plr.Character or Plr.CharacterAdded:wait()
         Character:WaitForChild("Humanoid")
         wait(0.2)
