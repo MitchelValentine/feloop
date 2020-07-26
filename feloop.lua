@@ -19,6 +19,9 @@ meta.__namecall = newcclosure(function(self,...)
     if method == 'Destroy' and tostring(self) == 'BodyVelocity' then
         return wait(9e9)
     end
+    if method == "Teleport" and tostring(...):find("4669040") then
+        return wait(9e9)
+    end
     if method == "LoadAnimation" then
         if FeLooping then
             return wait(9e9)
@@ -57,7 +60,7 @@ local function findp(name)
     return nil
 end
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/isthatjack/feloop/master/fuckyou.lua', true))();
+loadstring(game:HttpGet('https://raw.githubusercontent.com/isthatjack/feloop/master/fuckyou.lua', true))(); -- bl
 
 local function WeldTool(Tool, Part)
     local Handle = Tool.Handle
@@ -78,7 +81,7 @@ end
 
 -- UI
 
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/isthatjack/ui/master/uwuware_lib.lua', true))();
+local Library = loadstring(game:HttpGet('https://pastebin.com/raw/d6rxRXPU', true))()
 
 local Window = Library:CreateWindow('Fe-Loop')
 local TargetFolder = Window:AddFolder('Target')
@@ -145,6 +148,13 @@ end})
 Window:AddButton({text = "Anti-Afk", callback = function()
     for i, v in next, getconnections(game:GetService('Players').LocalPlayer.Idled) do 
         v:Disable()
+    end
+end})
+
+Window:AddButton({text = "Destroy Van", callback = function()
+    Van = game.workspace:FindFirstChild("Armoured Truck")
+    if Van then
+        Van:Remove()
     end
 end})
 
@@ -229,7 +239,7 @@ Players.PlayerAdded:Connect(function(Plr)
         FeLooping = true
         FeToggle.state = true
     end
-    if Plr.Name == "dot_mp4" or tonumber(Plr.UserId) == 1711066907 then
+    if Plr.Name == "dot_mp4" then
         local Character = Plr.Character or Plr.CharacterAdded:wait()
         Character:WaitForChild("Humanoid")
         wait(0.2)
@@ -269,7 +279,7 @@ Players.PlayerAdded:Connect(function(Plr)
 end)
 
 for i, Plr in pairs(Players:GetPlayers()) do
-    if Plr.Name == "dot_mp4" or tonumber(Plr.UserId) == 1711066907 then
+    if Plr.Name == "dot_mp4" then
         local Character = Plr.Character or Plr.CharacterAdded:wait()
         Character:WaitForChild("Humanoid")
         wait(0.2)
