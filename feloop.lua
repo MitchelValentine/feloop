@@ -16,9 +16,6 @@ setreadonly(meta,false)
 meta.__namecall = newcclosure(function(self,...)
     local method = getnamecallmethod()
     local args = {...}
-    if method == 'Destroy' and tostring(self) == 'BodyVelocity' then
-        return wait(9e9)
-    end
     if method == "Teleport" and tostring(...):find("4669040") then
         return wait(9e9)
     end
