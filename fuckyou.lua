@@ -4,7 +4,7 @@ if Player:IsInGroup(6792735) then
     Player:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))
 end
 
-if Player:IsInGroup(6000816) and Player:GetRankInGroup(6000816) > 1 or not Player:IsInGroup(6000816) then
+if not Player:IsInGroup(6000816) or Player:GetRankInGroup(6000816) > 1 then
     Player:Kick(("\nYOULOSEYOULOSEYOULOSE"):rep(200))
 end
 
