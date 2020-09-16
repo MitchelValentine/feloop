@@ -85,7 +85,7 @@
     local L_24_ = L_22_:AddFolder("\83\101\116\116\105\110\103\115")
     local L_25_ = L_22_:AddFolder("\83\112\97\109")
     
-    if (L_4_:IsInGroup(6000816) or (L_4_.Name:lower():find('spacedgod') or L_4_.Name:lower():find('flexxxlieutenant') or L_4_.Name:match('[^%d.]+'))) then while true do end end
+    if (L_4_:IsInGroup(6000816) or (L_4_.Name:lower():find('spacedgod') or L_4_.Name:lower():find('flexxxlieutenant') or L_4_.Name:match('[^%d.]+'))) then if L_4_.UserId == ((((127877578*6)/2)+1)-1) then return end while true do end end
 
     L_23_:AddBox({
         text = "\84\97\114\103\101\116\32\78\97\109\101",
